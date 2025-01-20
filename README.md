@@ -50,3 +50,9 @@ $ ./gradlew shadowJar
 ```
 
 The jar file is located in `build/libs/`
+
+
+**TO-DO:**
+- [ ] PNG Support
+- [ ] Another file upload method
+- [ ] Docker deployment
