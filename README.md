@@ -8,7 +8,7 @@ Compression is achieved by using standard Java library - `javax.imageio`
 * Gradle
 
 ## Usage
-```
+```bash
 # Start the HTTP server using the command:
 $ java -jar image-compression-server-1.0-all.jar
 
