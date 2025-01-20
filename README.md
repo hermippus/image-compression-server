@@ -12,7 +12,7 @@ Compression is achieved by using standard Java library - `javax.imageio`
 # Start the HTTP server using the command:
 $ java -jar image-compression-server-1.0-all.jar
 
-# Using cURL transfer the image
+# Using cURL to transfer the image
 $ curl -X POST --data-binary @input.jpg http://localhost:9000/upload -o output.jpg
 ```
 The image has been successfully compressed and does not contain EXIF!
