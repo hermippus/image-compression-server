@@ -58,6 +58,7 @@ The jar file is located in `build/libs/`
 
 **TO-DO:**
 - [ ] Moving to Spring
+- [ ] GraalVM Native Image
 - [ ] PNG support
 - [ ] Another file upload method
 - [ ] Docker deployment
