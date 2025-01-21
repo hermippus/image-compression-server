@@ -6,6 +6,7 @@ Compression is achieved by using standard Java library - `javax.imageio`
 ## Tech stack:
 * Java 21
 * Gradle
+* TinyLog
 
 ## Usage
 ```bash
