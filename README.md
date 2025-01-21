@@ -12,7 +12,7 @@ Compression is achieved by using standard Java library - `javax.imageio`
 * Java 21
 
 ## Usage
-```
+```bash
 # Start the Spring Web Server using the command:
 $ java -jar image-compression-server-2.0.0.jar
 
@@ -20,7 +20,6 @@ $ java -jar image-compression-server-2.0.0.jar
 $ curl -X POST -F "file=@input.jpg" http://localhost:9000/upload --output output.jpg
 ```
 The image has been successfully compressed and does not contain EXIF!
-
 
 ## Build setup
 ### Jenkins
