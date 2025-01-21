@@ -13,11 +13,11 @@ Compression is achieved by using standard Java library - `javax.imageio`
 
 ## Usage
 ```
-# Start the HTTP server using the command:
+# Start the Spring Web Server using the command:
 $ java -jar image-compression-server-2.0.0.jar
 
 # Using cURL to transfer image
-$ curl -X POST -F "file=@input.jpg" http://localhost:8080/upload --output output.jpg
+$ curl -X POST -F "file=@input.jpg" http://localhost:9000/upload --output output.jpg
 ```
 The image has been successfully compressed and does not contain EXIF!
 
@@ -56,7 +56,7 @@ $ ./gradlew build
 The jar file is located in `build/libs/`
 
 **TO-DO:**
-- [x] Move to Spring Framework
+- [x] Move to Spring Framework (Done in v2.0.0)
 - [ ] PNG support
-- [ ] Another file upload method
+- [x] Another file upload method (Done in v2.0.0)
 - [ ] Docker deployment
