@@ -57,6 +57,7 @@ The jar file is located in `build/libs/`
 
 
 **TO-DO:**
+- [ ] Movint to Spring
 - [ ] PNG support
 - [ ] Another file upload method
 - [ ] Docker deployment
