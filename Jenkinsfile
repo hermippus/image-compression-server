@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './gradlew clean shadowJar'
+                sh './gradlew clean build'
             }
         }
         stage('Archive Artifact') {
