@@ -8,6 +8,9 @@ Compression is achieved by using standard Java library - `javax.imageio`
 * Spring
 * Gradle
 
+## Requirements
+* Java 21
+
 ## Usage
 ```
 # Start the HTTP server using the command:
