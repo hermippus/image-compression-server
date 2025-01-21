@@ -8,6 +8,9 @@ Compression is achieved by using standard Java library - `javax.imageio`
 * Gradle
 * TinyLog
 
+## Requirements
+* Java 21
+
 ## Usage
 ```bash
 # Start the HTTP server using the command:
