@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "me.hermippus"
-version = "0.0.1"
+version = "2.0.0"
 
 java {
     toolchain {

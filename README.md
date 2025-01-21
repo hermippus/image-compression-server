@@ -11,7 +11,7 @@ Compression is achieved by using standard Java library - `javax.imageio`
 ## Usage
 ```
 # Start the HTTP server using the command:
-$ java -jar image-compression-server-1.0.jar
+$ java -jar image-compression-server-2.0.0.jar
 
 # Using cURL to transfer image
 $ curl -X POST -F "file=@input.jpg" http://localhost:8080/upload --output output.jpg
@@ -24,16 +24,16 @@ The image has been successfully compressed and does not contain EXIF!
 
 To set up continuous integration with Jenkins, use the `Jenkinsfile` located in the root of the project. Jenkins will
 automatically detect and use this file when you configure your Jenkins job with the "Pipeline from SCM" option. This
-will trigger the pipeline to build the project and create the `image-compression-server-1.0.jar` file
+will trigger the pipeline to build the project and create the `image-compression-server-2.0.0.jar` file
 
 ### GitHub Actions
 
 To set up continuous integration with GitHub Actions, use the `.github/workflows/gradle.yml` file located in the root of
-the repository. This file defines the steps required to build the project and create the `image-compression-server-1.0.jar` file
+the repository. This file defines the steps required to build the project and create the `image-compression-server-2.0.0.jar` file
 
 GitHub Actions will automatically detect and use this workflow when you push code to the repository. It will trigger the
 defined steps, including setting up the environment, installing dependencies, and running the Gradle build tasks to
-create the `image-compression-server-1.0.jar` file
+create the `image-compression-server-2.0.0.jar` file
 
 ### Manual
 
