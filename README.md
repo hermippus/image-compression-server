@@ -12,6 +12,7 @@ Compression is achieved by using standard Java library - `javax.imageio`
 * Java 21
 
 ## Usage
+Default usage:
 ```bash
 # Start the Spring Web Server using the command:
 $ java -jar image-compression-server-2.0.0.jar
@@ -19,7 +20,18 @@ $ java -jar image-compression-server-2.0.0.jar
 # Using cURL to transfer image
 $ curl -X POST -F "file=@input.jpg" http://localhost:9000/upload --output output.jpg
 ```
-The image has been successfully compressed and does not contain EXIF!
+
+Docker usage:
+```bash
+# Build docker image
+$ docker build -t image-compression-server .
+
+# Start docker container
+$ docker run -d -p 9000:9000 --name image-compression-server image-compression-server:latest
+
+# Using cURL to transfer image
+$ curl -X POST -F "file=@input.jpg" http://localhost:9000/upload --output output.jpg
+```
 
 ## Build setup
 ### Jenkins
@@ -58,4 +70,4 @@ The jar file is located in `build/libs/`
 - [x] Move to Spring Framework (Done in v2.0.0)
 - [ ] PNG support
 - [x] Another file upload method (Done in v2.0.0)
-- [ ] Docker deployment
+- [x] Docker deployment (Done in v2.0.0)
